@@ -1,0 +1,15 @@
+.carousel {
+  margin: 2rem 0;
+  padding: 2rem;
+  @include grid(2);
+
+  .image-carousel {
+    flex-basis: 20%;
+
+    img {
+      @include floating();
+      width: 100%;
+      height: auto;
+    }
+  }
+}

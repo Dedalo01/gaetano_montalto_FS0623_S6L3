@@ -1,0 +1,45 @@
+main section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2%;
+  padding: 0.2rem 0.5rem 4rem 0.5rem;
+  background-color: $bgHeroColor;
+}
+
+.text-container {
+  display: none;
+
+  @include fadeInAnimation(1.9s, -150px, 0, 0.9s);
+  flex-basis: 30%;
+
+  h1#title-big {
+    @include setTitle;
+  }
+
+  .btn-group {
+    margin-top: 1rem;
+    button:nth-child(1) {
+      @include setBtn($btnColorBlue);
+    }
+    button:nth-child(2) {
+      @include setBtn($btnColorOrange);
+    }
+    button:nth-child(3) {
+      @include setBtn($btnColorGreen);
+    }
+  }
+}
+
+.img-container {
+  display: none;
+
+  @include fadeInAnimation(1.3s, -200px, 0, 0.8s);
+  flex-basis: 40%;
+
+  img {
+    @include floating(1px 2px 10px black, 2px solid white, 3px);
+    width: 100%;
+    height: auto;
+  }
+}

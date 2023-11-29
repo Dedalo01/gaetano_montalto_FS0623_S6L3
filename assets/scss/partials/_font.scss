@@ -1,0 +1,16 @@
+// font family
+$fontFamily: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+  "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+
+$fontSizeExtreme: 4rem;
+$fontSizeBig: 2rem;
+$fontSizeMedium: 1.5rem;
+$fontSizeSmall: 0.9rem;
+
+// mixin for title-big
+@mixin setTitle {
+  margin: 1rem;
+  font-size: $fontSizeExtreme;
+  font-weight: bold;
+  line-height: 1.3;
+}

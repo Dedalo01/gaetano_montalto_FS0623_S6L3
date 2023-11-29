@@ -1,0 +1,32 @@
+body {
+  color: $textColor;
+  font-family: $fontFamily;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: $bgHeroColor;
+  #logo {
+    flex-basis: 5%;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  // nav
+  nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    li {
+      margin: 0 0.8rem;
+      font-size: $fontSizeMedium;
+      cursor: pointer;
+    }
+  }
+}

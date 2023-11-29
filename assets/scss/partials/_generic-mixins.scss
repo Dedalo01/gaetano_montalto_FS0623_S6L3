@@ -1,0 +1,16 @@
+@mixin floating(
+  $boxShadow: 2px 3px 8px black,
+  $border: none,
+  $borderRadius: 0
+) {
+  border-radius: $borderRadius;
+  box-shadow: $boxShadow;
+  border: $border;
+}
+
+// grid
+@mixin grid($elPerRow) {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}

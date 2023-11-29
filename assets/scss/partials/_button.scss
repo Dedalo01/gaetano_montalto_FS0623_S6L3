@@ -1,0 +1,15 @@
+@mixin setBtn($bgColor) {
+  display: inline-block;
+  background-color: $bgColor;
+  border: none;
+  padding: 0.5rem 1rem;
+  margin: 0 0.1rem;
+  color: inherit;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  &:hover {
+    transform: scale(0.9);
+  }
+}
